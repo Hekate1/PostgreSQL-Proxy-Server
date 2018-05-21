@@ -11,7 +11,7 @@ import java.util.Properties;
  */
 public class Client {
 
-  private static String SQL_QUERY = "select * from connor";
+  private static String SQL_QUERY = "SELECT column2, SUM(testvalues) AS qt_hub91yccnb FROM connor AS t0 GROUP BY column2 ORDER BY qt_hub91yccnb DESC";
 
   public static void main(String args[]) throws SQLException, ClassNotFoundException, InterruptedException {
     Class.forName("org.postgresql.Driver");
